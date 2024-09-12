@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bton {
+    border: none;
+    background-color: white;
+    padding: 10px 40px;
+}
+
+.dot {
+    background-color: black;
+    height: 5px;
+    width: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+header{   
+    background-color: rgb(15, 15, 15);
+
+}
+.bton:hover .dot {
+    animation: doit 0.6s ease-in-out 0s infinite forwards alternate;
+    transition: all ease-in-out;
+}
+.darker{
+    background-color: rgb(15, 15, 15);
+}
+@keyframes doit {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.gri img {
+    transition: all 0.5s ease-in-out;
+}
+
+.gri img:hover {
+    transform: translateY(-15px);
+}
+
+.pro {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.pro h2 {
+    padding: 20px 70px;
+    box-sizing: border-box;
+}
+
+.pro p {
+    padding-left: 40px;
+}
+.pic img {
+    height: 300px;
+    width: 450px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.pic .pic1 {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    bottom: 30%;
+    left: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media (max-width:425px) {
+    .pro h2 {
+        padding: 10px 30px;
+        box-sizing: border-box;
+    }
+
+    .pro p {
+        padding-left: 20px;
+    }
+
+    .pic img {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pic .pic1 {
+        height: 250px;
+        width: 270px;
+        position: relative;
+        bottom: 10%;
+        left: 30%;
+    }
+}
+
+@media (max-width:375px) {
+    .pic .pic1 {
+        height: 180px;
+        width: 230px;
+        position: relative;
+        bottom: 10%;
+        left: 20%;
+    }
+
+    .pic img {
+        height: 250px;
+        width: 300px;
+    }
+}
+
+@media (max-width:320px) {
+
+    .pic .pic1 {
+        height: 200px;
+        width: 270px;
+        position: relative;
+        bottom: 10%;
+        left: 30%;
+    }
+    .pic img {
+        height: 250px;
+        width: 300px;
+    }
+    .pro h2 {
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    
+}
+
+.grid img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.grid img:hover {
+    transform: translateY(-15px);
+}
